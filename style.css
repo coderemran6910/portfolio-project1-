@@ -16,9 +16,8 @@ nav{
     height: 50px;
     padding: 10px;
 }
-.menu ul{
+.menu > ul{
     display: flex;
-    list-style: none;
     justify-content: space-around;
     align-items: center;
 }
@@ -26,6 +25,8 @@ nav{
     padding: 10px;
     font-weight: bold;
     font-size: 18px;
+    color: rgba(1, 0, 0, 0.665);
+    list-style: none;
 }
 .menu ul li:hover{
     cursor: pointer;
@@ -39,7 +40,7 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -49,10 +50,48 @@ nav{
 
 }
 .cover::before{
-    background-color: rgba(3, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.644);
     content: '';
     display: block;
     height: 100%;
     position: absolute;
     width: 100%;
   }
+  .heading{
+      font-size: 60px;
+      position: relative;
+      z-index: 1;
+  }
+  .btn{
+    position: relative;
+      padding: 10px 20px;
+      background-color: #2aaf73;
+      border: none;
+      top: 20px;
+      text-transform: uppercase;
+      color: white;
+      color: black;
+      font-weight: 400;
+      padding: 20px 30px;
+  }
+  .sub-title{
+      font-size: 20px;
+      position: relative;
+      z-index: 1;
+      bottom: 20px;
+      font-weight: 300;
+  }
+  .servicesSection{
+    width: 100vh;
+  }
+  nav ul li .dropdown{
+    display: none;
+  }
+  nav ul li:hover > .dropdown{
+    display: block;
+    position: absolute;
+    background-color: beige;
+    z-index: 2;
+    
+  }
+
